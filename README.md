@@ -1,9 +1,10 @@
 # Get Started
 TODO: Write a project description
 ## Installation
-...
+```sh
 git clone https://github.com/blackaries506/blackariestool.git
-...
+```
+
 ## Usage
 TODO: Write usage instructions
 ## Contributing
