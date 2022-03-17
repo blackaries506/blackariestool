@@ -11,7 +11,6 @@ cd blackariestool
 2. spam bot
 3. Data encryption
 4. Phone Number info
-5. facebook bruteforce attack
 6. pass list maker
 7. pin list maker
  
