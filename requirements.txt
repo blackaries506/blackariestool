@@ -1,0 +1,6 @@
+colorama~=0.4.4
+PyAutoGUI~=0.9.53
+pyfiglet~=0.8.post1
+requests~=2.27.1
+phonenumbers~=8.12.46
+setuptools~=60.2.0
