@@ -7,12 +7,14 @@ cd blackariestool
 ```
 
 ## Usage
-1. instabot 
+1. instagram tool
 2. spam bot
 3. Data encryption
 4. Phone Number info
 6. pass list maker
 7. pin list maker
+8. spam phone number
+9. titok veiws
  
 ### password
 ```
