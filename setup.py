@@ -1,14 +1,13 @@
-from setuptools import setup
+
 import os
 os.system("python3 -m pip install -r requirements.txt")
+os.system("sudo apt install figlet")
 
-setup(
-    name='setup',
+print(""""
+    name='black Aries',
     version='1.0',
     packages=['en'],
-    url='',
-    license='',
     author='yousef mohamad abdala',
     author_email='yousefmohamad506@gmail.com',
-    description=''
-)
+    description='Hack Tool'""""")
+
