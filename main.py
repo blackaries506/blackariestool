@@ -6,7 +6,6 @@ import colorama
 from colorama import Fore
 from phonenumbers import geocoder, parse, carrier, timezone
 import time, sys
-import pyautogui
 import marshal
 import pyfiglet
 import requests
