@@ -1,5 +1,4 @@
 import os
-os.system('python3 setup.py')
 import random as rand
 import re
 import threading
